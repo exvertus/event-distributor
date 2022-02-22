@@ -1,0 +1,36 @@
+{
+    // Add this config to .vscode if you are using it
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Jasmine Integration",
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/jasmine/bin/jasmine.js",
+            "args": ["--config=test/support/integration-tests.json"]
+        },
+        {
+            "name": "Jasmine Unit",
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/jasmine/bin/jasmine.js",
+            "args": ["--config=test/support/unit-tests.json"]
+        },
+        {
+            "name": "Jasmine All",
+            "type": "pwa-node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/jasmine/bin/jasmine.js",
+            "args": ["--config=test/support/all-tests.json"]
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\app.js"
+        }
+    ]
+}
