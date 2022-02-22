@@ -1,0 +1,26 @@
+{
+  "name": "event-distributor",
+  "version": "0.0.1",
+  "description": "Automate copying events across different platforms",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exvertus/event-distributor.git"
+  },
+  "keywords": [],
+  "author": "Tom Flanigan",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/exvertus/event-distributor/issues"
+  },
+  "homepage": "https://github.com/exvertus/event-distributor#readme",
+  "devDependencies": {
+    "jasmine": "^4.0.2"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
