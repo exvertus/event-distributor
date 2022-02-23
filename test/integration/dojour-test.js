@@ -1,4 +1,4 @@
-console.log('dojour-test.js: line 1');
+console.log('sanity debugger here');
 import Dojour from "../../lib/dojour.js";
 
 describe("Dojour", function() {
@@ -12,6 +12,10 @@ describe("Dojour", function() {
 
   it("should be able to GET an event", function() {
     let r = dojour.getEvent(testEvent);
+    r.then(
+        function(value) {console.log('success');},
+        function(error) {console.log('error')}
+    );
     console.log('break here');
   });
 });
