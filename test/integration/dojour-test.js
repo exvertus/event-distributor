@@ -12,6 +12,6 @@ describe("Dojour", function() {
 
   it("should be able to GET an event", function() {
     let r = dojour.getEvent(testEvent);
-    console.log('break here');
+    console.log('dojour-test.js: break here');
   });
 });
