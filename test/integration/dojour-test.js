@@ -1,4 +1,3 @@
-console.log('dojour-test.js: line 1');
 import Dojour from "../../lib/dojour.js";
 
 describe("Dojour", function() {
@@ -10,8 +9,9 @@ describe("Dojour", function() {
     dojour = new Dojour();
   });
 
-  it("should be able to GET an event", function() {
-    let r = dojour.getEvent(testEvent);
-    console.log('dojour-test.js: break here');
+  it(".getEvent should populate .data", function() {
+    dojour.getEvent(testEvent);
+    // TODO: Refine assertion to look for key piece of data.
+    expect(dojour.data).toBeGreaterThan(0);
   });
 });
