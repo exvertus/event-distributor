@@ -1,14 +1,21 @@
+console.log('sanity debugger here');
+import Dojour from "../../lib/dojour.js";
+
 describe("Dojour", function() {
-    const Dojour = require('../../lib/dojour.js');
-    let dojour;
+  let dojour = {};
 
-    const test_event = '15464';
+  const testEvent = '15464';
 
-    beforeEach(function() {
-        dojour = new Dojour();
-    });
-    it("should be able to GET an event", function() {
-        dojour.events.get(test_event);
-        console.log('break here');
-    });
+  beforeEach(function() {
+    dojour = new Dojour();
+  });
+
+  it("should be able to GET an event", function() {
+    let r = dojour.getEvent(testEvent);
+    r.then(
+        function(value) {console.log('success');},
+        function(error) {console.log('error')}
+    );
+    console.log('break here');
+  });
 });
