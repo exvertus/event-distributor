@@ -12,6 +12,7 @@ describe("Dojour", function() {
   it(".getEvent should populate .data", function() {
     dojour.getEvent(testEvent);
     // TODO: Refine assertion to look for key piece of data.
-    expect(dojour.data).toBeGreaterThan(0);
+    const dataLength = Object.keys(dojour.data).length;
+    expect(dataLength).toBeGreaterThan(0);
   });
 });
