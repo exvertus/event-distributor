@@ -16,3 +16,5 @@ const eventBrite = new EventBrite(dojour).postEvent();
 const facebook = new Facebook(dojour).postEvent();
 const google = new Google(dojour).postEvent();
 const verlocal = new Verlocal(dojour).postEvent();
+
+console.log("Event distribution complete.")
