@@ -1,6 +1,12 @@
 # event-distributor
 Service to automate copying events across different platforms
 
+### How do I
+- Run tests:
+  - npm run unit
+  - npm run integration
+  - npm run test (runs all tests)
+
 ### initial use-case
 1. Create event on dojour.us
 1. Call event-distributor with dojour event id
