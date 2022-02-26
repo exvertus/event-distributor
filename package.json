@@ -5,7 +5,9 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jasmine --config=test/support/all-tests.json",
+    "unit": "npx jasmine --config=test/support/unit-tests.json",
+    "integration": "npx jasmine --config=test/support/integration-tests.json"
   },
   "repository": {
     "type": "git",
